@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.21.xsd">
+
+    <changeSet id="insert-product" author="Jefferson">
+        <insert tableName="shop.PRODUCT">
+            <column name="id" valueComputed="1" />
+            <column name="product_identifier" value="Radiador" />
+            <column name="amount" valueComputed="10" />
+        </insert>
+
+        <insert tableName="shop.PRODUCT">
+            <column name="id" valueComputed="2" />
+            <column name="product_identifier" value="Pastilha de freio" />
+            <column name="amount" valueComputed="0" />
+        </insert>
+
+        <insert tableName="shop.PRODUCT">
+            <column name="id" valueComputed="3" />
+            <column name="product_identifier" value="Oleo do motor" />
+            <column name="amount" valueComputed="5" />
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
