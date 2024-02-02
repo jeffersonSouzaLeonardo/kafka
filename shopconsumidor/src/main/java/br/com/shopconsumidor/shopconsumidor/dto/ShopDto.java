@@ -12,7 +12,5 @@ public class ShopDto {
 
     private Long id;
     private String status;
-    private LocalDate dataCompra;
-    private List<ShopItemDto> items;
 
 }
